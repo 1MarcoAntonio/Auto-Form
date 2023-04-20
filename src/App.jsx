@@ -1,13 +1,15 @@
-import { useState } from "react";
+import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import "./App.css";
-import ItensList from "./components/ItensList";
+import MainMenu from "./components/MainMenu";
+import OsOptions from "./pages/OsOptions";
+
+const router = createBrowserRouter([
+  { path: "/", element: <MainMenu /> },
+  { path: "/o.s", element: <OsOptions /> },
+]);
 
 function App() {
-  return (
-    <div className="App">
-      <ItensList />
-    </div>
-  );
+  return <RouterProvider router={router} />;
 }
 
 export default App;
