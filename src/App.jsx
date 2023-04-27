@@ -6,6 +6,7 @@ import OsOptions from "./pages/OsOptions";
 const router = createBrowserRouter([
   { path: "/", element: <MainMenu /> },
   { path: "/o.s", element: <OsOptions /> },
+  { path: "/todas", element: "" },
 ]);
 
 function App() {

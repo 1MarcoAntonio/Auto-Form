@@ -1,11 +1,11 @@
 import classes from "./ItemsStyle.module.css";
 import { Link } from "react-router-dom";
 
-function NewOsItem({ image, alt, lastIten, description }) {
+function NewCollection({ image, alt, lastIten, description, link }) {
   return (
     <>
       <div className={classes.itens}>
-        <Link to={"/o.s"}>
+        <Link to={link}>
           <img className={classes.image} src={image} alt={alt} />
           <p>{description}</p>
           <p>{lastIten}</p>
@@ -15,4 +15,4 @@ function NewOsItem({ image, alt, lastIten, description }) {
   );
 }
 
-export default NewOsItem;
+export default NewCollection;

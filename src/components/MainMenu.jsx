@@ -1,20 +1,21 @@
 import { Link } from "react-router-dom";
-import NewToolsItem from "./NewToolsItem";
-import NewOsItem from "./NewOsItem";
+import NewCollection from "./NewCollection";
 import os from "../assets/os.png";
 import search from "../assets/search.png";
 
 function MainMenu() {
   return (
     <>
-      <NewOsItem
+      <NewCollection
+        link={"/o.s"}
         image={os}
         alt={"os-icon"}
         description={"Gerenciar O.S"}
         lastIten={"Ultima O.S Registrada: value "} // value needs to be dinamic
       />
 
-      <NewToolsItem
+      <NewCollection
+        link={""}
         image={search}
         alt={"search-icon"}
         description={"Area de Ferramentas"}
